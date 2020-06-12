@@ -9,7 +9,9 @@ import enhanceMessage from './enhanceMessage';
 import { TwilioError } from 'twilio-video';
 
 interface ErrorDialogProps {
+  /** An handler for dismissal of the popup. */
   dismissError: Function;
+  /** An object specifying the error message and code. */
   error: TwilioError | null;
 }
 
